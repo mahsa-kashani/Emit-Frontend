@@ -1,0 +1,65 @@
+.profile-container {
+  display: flex;
+  width: 100%;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  border: 2px solid #d1d5db;
+  box-sizing: border-box;
+  object-fit: cover;
+  margin: 10px;
+  margin-right: 30px;
+}
+
+.profile-info h1 {
+  font-size: 32px;
+}
+
+.profile-info p {
+  font-size: 20px;
+}
+.profile-info p strong {
+  color: #579bb1;
+}
+.toCopy {
+  cursor: pointer;
+  position: relative;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: color, text-decoration-color, color 0.1s ease;
+}
+
+.toCopy:hover {
+  color: #00bcd4;
+  text-decoration-color: #00bcd4;
+}
+.copied {
+  font-size: 12px;
+  color: #579bb1;
+  margin-left: 5px;
+  font-weight: bold;
+  animation: fadeOut 3s ease;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@media screen and (max-width: 1470px) {
+  .menu-button {
+    display: flex !important;
+  }
+}
+
+@media screen and (min-width: 1471px) {
+  .menu-button {
+    display: none;
+  }
+}

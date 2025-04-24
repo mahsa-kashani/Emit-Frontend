@@ -1,0 +1,113 @@
+@font-face {
+	font-family: 'Orbitron';
+	src: local('Orbitron'),
+		url(../assets/Orbitron/Orbitron-Regular.ttf) format('truetype');
+}
+
+.scoreboard-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	background-color: #0b253a;
+}
+
+.scoreboard-title {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	background: white;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+	padding-bottom: 10px;
+	border-bottom: 3px solid #194b66;
+}
+
+.scoreboard-table {
+	border-collapse: collapse;
+	margin-top: 20px;
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	overflow: hidden;
+	width: 90%;
+	max-width: 1200px;
+}
+
+.scoreboard-table th,
+.scoreboard-table td {
+	border: none;
+	padding: 13px;
+	text-align: center;
+}
+.scoreboard-table td {
+	border: none;
+	border-top: 1px solid #767a7e;
+	text-align: center;
+	font-size: 18px;
+	background-color: #d1d5db;
+	color: #071827;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.success {
+	width: 50%;
+	margin: 0 auto;
+	padding: 8px;
+	border-radius: 8px;
+	background-color: #4caf50 !important;
+	font-weight: bold !important;
+	color: white;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fail {
+	width: 50%;
+	margin: 0 auto;
+	padding: 8px;
+	border-radius: 8px;
+	color: #3d4043;
+	background-color: #d1d5db !important;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.scoreboard-table th {
+	background: linear-gradient(45deg, #1b4f72, #194b66);
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+@keyframes glowing {
+	0% {
+		text-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+	}
+	50% {
+		text-shadow: 0 0 10px rgba(0, 188, 212, 0.8);
+	}
+	100% {
+		text-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+	}
+}
+.scoreboard-title {
+	animation: glowing 1.5s infinite alternate;
+	font-size: 35px;
+}
+.user-rank-row {
+	font-weight: bold;
+	cursor: pointer;
+	border-right: 8px solid rgba(103, 246, 246, 0.4);
+	transition: background-color 0.3s ease-in-out;
+}
+.user-rank-row td {
+	background-color: #00bcd4 !important;
+}
+
+.user-rank-row:hover td {
+	background-color: #338bba !important;
+}
